@@ -1,0 +1,7 @@
+For build           : sudo docker build -t ears_question .
+For running api     : sudo docker run -d --name ctf_ears -p 8080:80 ears_question
+For printing logs   : docker logs -f ctf_ears &> logs/output.txt &
+
+For stopping api    : sudo docker stop ctf_ears
+For removing api    : sudo docker rm ctf_ears
+For removing image  : sudo docker rmi ears_question

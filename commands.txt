@@ -1,0 +1,16 @@
+- Hello World Example
+sudo docker pull hello-world
+sudo docker run hello-world
+
+- Python Script Example
+sudo docker build -t python_example .
+sudo docker run python_example
+
+- API Example
+For build           : sudo docker build -t api_example .
+For running api     : sudo docker run -d --name api -p 8080:80 api_example
+For printing logs   : docker logs -f api &> logs/output.txt &
+
+For stopping api    : sudo docker stop api
+For removing api    : sudo docker rm api
+For removing image  : sudo docker rmi api_example
